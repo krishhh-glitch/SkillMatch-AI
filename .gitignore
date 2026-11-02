@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environment
+.venv/
+
+# Mac
+.DS_Store
+
+# Secrets
+.env
+
+# Private resume uploads
+data/uploads/
