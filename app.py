@@ -18,35 +18,55 @@ st.markdown("""
 <style>
     .stApp {
         background-color: #F5F8FF;
+        color: #1E293B;
     }
 
     [data-testid="stSidebar"] {
         background-color: #E8F0FE;
     }
 
-    h1, h2, h3 {
-        color: #1E3A8A;
+    [data-testid="stSidebar"] * {
+        color: #1E293B !important;
+    }
+
+    h1, h2, h3, p, label, span {
+        color: #1E293B;
+    }
+
+    .stMarkdown p,
+    .stMarkdown li {
+        color: #334155;
     }
 
     div[data-testid="stMetric"] {
-        background-color: white;
-        border: 1px solid #DCE6F5;
+        background-color: #FFFFFF;
+        border: 1px solid #CBD5E1;
         padding: 18px;
         border-radius: 12px;
     }
 
+    div[data-testid="stMetric"] label,
+    div[data-testid="stMetric"] [data-testid="stMetricValue"] {
+        color: #1E293B !important;
+    }
+
     .stButton > button {
         background-color: #2563EB;
-        color: white;
+        color: #FFFFFF !important;
         border-radius: 8px;
         border: none;
-        padding: 10px 20px;
         font-weight: bold;
     }
 
     .stButton > button:hover {
         background-color: #1D4ED8;
-        color: white;
+        color: #FFFFFF !important;
+    }
+
+    .stTextArea textarea,
+    .stTextInput input {
+        background-color: #FFFFFF;
+        color: #1E293B;
     }
 </style>
 """, unsafe_allow_html=True)
